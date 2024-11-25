@@ -55,18 +55,53 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 150px;
-        border-bottom: 3px solid #afacac9e;
+        width: 100vh;
+        margin-top: 150px;
+        border-collapse: collapse;
+        text-overflow: wrap;
+
 
         th {
-            padding-left: 100px;
-            font-size: 18px;
+
+            font-size: 17px;
             font-weight: 500;
-            border-bottom: 3px solid #afacac9e;
+            background-color: whitesmoke;
+            text-align: center;
+            padding: 20px 30px 10px 30px;
+
         }
-        .pirmaEile{
-            padding-left: 0;
-            
+    }
+
+    td {
+        text-align: center;
+    }
+
+    .visoSuma {
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        padding-top: 25px;
+        border-collapse: collapse;
+        font-weight: 500;
+        font-size: 18px;
+
+        text-align: center;
+
+    }
+
+    .kasIsrase {
+        margin: 150px 50px 0 50px;
+
+        .kasIsraseInfo {
+            font-weight: 600;
+            padding-top: 10px;
+            font-size: 17px;
+        }
+
+        .kamIsraseVardas {
+            padding-left: 30px;
+            font-weight: 400;
+            font-size: 16px;
         }
     }
 }
