@@ -15,15 +15,14 @@
 </head>
 
 <body>
-
     <header class="title">
         <div>
             <h1> PVM Sąskaita faktūra</h1>
-            <p class="serNr"> <span></span></p>
+            <p class="serNr">Serijos Nr. <span></span></p>
         </div>
         <div class="date">
-            <p>Data: <span class="israsymoData"></span></p>
-            <p>Apmokėti iki: <span class="sumoketiIki"></span></p>
+            <p>Data <span><b>2024-11-21</b></span></p>
+            <p>Apmokėti iki <span><b>2024-12-21</b></span></p>
         </div>
     </header>
 
@@ -41,7 +40,7 @@
                     <p class="pardavejoPvmKodas"></p>
                     <p class="pardavejoTelNr"></p>
                     <p class="pardavejoEmail"></p>
-
+                   
                 </div>
                 <div class="pirkejas">
                     <h3>Pirkėjas</h3>
@@ -59,26 +58,50 @@
     <section>
         <div class="sectionLentele">
             <table class="lentele">
-                <thead>
-                    <tr>
-                        <th>Prekės pavadinimas</th>
-                        <th>Kiekis</th>
-                        <th>Kaina be nuuolaidos</th>
-                        <th>Nuolaida</th>
-                        <th>Visa kaina su nuolaida</th>
-                    </tr>
-                </thead>
-                <tbody id="prekes">
-                   
-                </tbody>
+                <tr class="produktai">
+                    <th class="pirmaEile">Produktas</th>
+                    <th>Kiekis</th>
+                    <th>Vnt. kaina be PVM</th>
+                    <th>Vnt. nuolaida</th>
+                    <th>PVM (21%)</th>
+                    <th>Suma</th>
+                </tr>
+                <tr class="pirmaPreke">
+                    <td>prekė 1</td>
+                    <td>prekė 1</td>
+                    <td>prekė 1</td>
+                    <td>prekė 1</td>
+                    <td>prekė 1</td>
+                    <td>prekė 1</td>
+                </tr>
+                <tr class="antraPreke">
+                    <td>prekė 2</td>
+                    <td>prekė 2</td>
+                    <td>prekė 2</td>
+                    <td>prekė 2</td>
+                    <td>prekė 2</td>
+                    <td>prekė 2</td>
+                </tr>
+                <tr class="treciaPreke">
+                    <td>prekė 3</td>
+                    <td>prekė 3</td>
+                    <td>prekė 3</td>
+                    <td>prekė 3</td>
+                    <td>prekė 3</td>
+                    <td>prekė 3</td>
+                </tr>
+
+                <tr class="visoSuma">
+                    <td>Viso suma: <span>55</span> € </td>
+                </tr>
             </table>
-            <div class="visoSuma">
-                <p>Transportavimo išlaidos: <span id="transportoIslaidos"></span></p>
-                <p>Tarpinė kaina: <span id="tarpineSuma"></span></p>
-                <p>21% PVM: <span id="pvm"></span></p>
-                <p class="viso">Galutinė kaina su PVM:<span id="galutineSuma"></span></p>
-            </div>
+
         </div>
+    </section>
+
+    <section class="kasIsrase">
+        <p class="kasIsraseInfo">Sąskaitą išrašė: <span class="kamIsraseVardas">Kristina Kalkienė</span></p>
+        <p class="kasIsraseInfo">Sąskaitą gavo: <span class="kamIsraseVardas">Vardeis Pavardenis</span></p>
     </section>
 
 </body>
