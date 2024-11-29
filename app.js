@@ -36,11 +36,11 @@ fetch('https://in3.dev/inv/')
 
             if (item.discount && item.discount.value) {
                 if (item.discount.type === 'fixed') {
-                    nuolaida = item.discount.value; 
-                    nuolaidosDydis = `${nuolaida} €`;
+                    nuolaida = item.discount.value * item.quantity; 
+                    nuolaidosDydis = `- ${nuolaida} €`;
                 } else if (item.discount.type === 'percentage') {
-                    nuolaida = (item.price * nuolaidosTipas) / 100;
-                    nuolaidosDydis = `${nuolaidosTipas}% (- ${nuolaida.toFixed(2)} €)`; 
+                    nuolaida = (item.price * nuolaidosTipas * item.quantity) / 100;
+                    nuolaidosDydis = `- ${nuolaidosTipas}% (- ${nuolaida.toFixed(2)} €)`; 
                 }
             }
         
