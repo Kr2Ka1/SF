@@ -39,7 +39,7 @@ fetch('https://in3.dev/inv/')
                     nuolaida = item.discount.value * item.quantity; 
                     nuolaidosDydis = `- ${nuolaida} €`;
                 } else if (item.discount.type === 'percentage') {
-                    nuolaida = (item.price * nuolaidosTipas * item.quantity) / 100;
+                    nuolaida = ((item.price * nuolaidosTipas) / 100) * item.quantity;
                     nuolaidosDydis = `- ${nuolaidosTipas}% (- ${nuolaida.toFixed(2)} €)`; 
                 }
             }
