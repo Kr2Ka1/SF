@@ -1,9 +1,9 @@
 .title {
     h1 {
         font-family: "Roboto", serif;
-        font-size: 40px;
+        font-size: 30px;
         text-align: center;
-        margin: 25px 25px;
+        margin: 15px 15px;
         padding-top: 15px;
         text-transform: uppercase;
 
@@ -11,9 +11,9 @@
 
     .serNr {
         font-family: "Roboto", serif;
-        font-size: 25px;
+        font-size: 20px;
         text-align: center;
-        margin: 25px 25px;
+        margin: 15px 15px;
     }
 
     .date {
@@ -26,6 +26,11 @@
         font-size: 17px;
         font-weight: 700;
 
+        p {
+            line-height: 0;
+        }
+
+
         span {
             font-weight: 500;
         }
@@ -35,66 +40,90 @@
 
 body {
     font-family: "Roboto", serif;
-    width: 80%;
-    margin-left: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+    .sf {
+        width: 70%;
+        border: 1px solid rgba(161, 159, 159, 0.715);
+        padding: 80px;
 
-    .logo {
-        width: 300px;
-        margin: 30px 0px;
-    }
-
-    .imoniuDuomenys {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        justify-content: space-between;
-        padding: 50px 18px;
-
-
-        h3 {
-            font-size: 25px;
-
+        .logo {
+            width: 250px;
+            margin: 10px 0px;
         }
-    }
 
-    .sectionLentele {
-        width: 100%;
+        .imoniuDuomenys {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 18px 25px 18px;
+            line-height: 10px;
 
-        .lentele {
+
+            h3 {
+                font-size: 25px;
+
+            }
+        }
+
+        .sectionLentele {
             width: 100%;
-            border-collapse: collapse;
-            margin-top: 10px;
-            border: 1px solid #ddd;
 
-            th {
+            .lentele {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 10px;
                 border: 1px solid #ddd;
-                padding: 8px;
-                text-align: center;
-                background-color: #f2f2f2;
+
+                th {
+                    border: 1px solid #ddd;
+                    padding: 8px;
+                    text-align: center;
+                    background-color: #f2f2f2;
+                }
+
+                td {
+                    border: 1px solid #ddd;
+                    padding: 8px;
+                    text-align: center;
+                }
+
             }
 
-            td {
-                border: 1px solid #ddd;
-                padding: 8px;
-                text-align: center;
-            }
+            .visoSuma {
+                margin-top: 20px;
+                text-align: right;
 
+                p {
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+
+                span {
+                    font-weight: 800;
+                }
+
+
+                .viso {
+                    font-weight: 900;
+
+                }
+            }
         }
 
-        .visoSuma {
-            margin-top: 20px;
-            text-align: right;
-
-            p {
-                font-size: 16px;
-            }
-
-            .viso {
-                font-weight: bold
+        .saskaitaIsrase {
+            padding-top: 15px;
+            p{
+                font-weight: 400;
+                font-size: 15px;
+                span{
+                    font-weight: 700;
+                }
             }
         }
     }
-
-
 }

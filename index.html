@@ -15,72 +15,77 @@
 </head>
 
 <body>
+    <section class="sf">
 
-    <header class="title">
-        <div>
-            <h1> PVM Sąskaita faktūra</h1>
-            <p class="serNr"> <span></span></p>
-        </div>
-        <div class="date">
-            <p>Data: <span class="israsymoData"></span></p>
-            <p>Apmokėti iki: <span class="sumoketiIki"></span></p>
-        </div>
-    </header>
+        <header class="title">
+            <div>
+                <h1> PVM Sąskaita faktūra</h1>
+                <p class="serNr"> <span></span></p>
+            </div>
+            <div class="date">
+                <p>Data: <span class="israsymoData"></span></p>
+                <p>Apmokėti iki: <span class="sumoketiIki"></span></p>
+            </div>
+        </header>
 
-    <section>
-        <div class="informacija">
-            <img class="logo"
-                src="https://winecountryshortsalesdotcom.wordpress.com/wp-content/uploads/2012/04/bg-kk-logo-png.png"
-                alt="K&K-logo">
-            <div class="imoniuDuomenys">
-                <div class="pardavejas">
-                    <h3>Pardavėjas</h3>
-                    <p class="pardavejoPavadini"></p>
-                    <p class="pardavejoAdresas"></p>
-                    <p class="pardavejoImonesKodas"></p>
-                    <p class="pardavejoPvmKodas"></p>
-                    <p class="pardavejoTelNr"></p>
-                    <p class="pardavejoEmail"></p>
+        <section>
+            <div class="informacija">
+                <img class="logo"
+                    src="https://winecountryshortsalesdotcom.wordpress.com/wp-content/uploads/2012/04/bg-kk-logo-png.png"
+                    alt="K&K-logo">
+                <div class="imoniuDuomenys">
+                    <div class="pardavejas">
+                        <h3>Pardavėjas</h3>
+                        <p class="pardavejoPavadini"></p>
+                        <p class="pardavejoAdresas"></p>
+                        <p class="pardavejoImonesKodas"></p>
+                        <p class="pardavejoPvmKodas"></p>
+                        <p class="pardavejoTelNr"></p>
+                        <p class="pardavejoEmail"></p>
 
-                </div>
-                <div class="pirkejas">
-                    <h3>Pirkėjas</h3>
-                    <p class="pirkejoPavadini"></p>
-                    <p class="pirkejoAdresas"></p>
-                    <p class="pirkejoImonesKodas"></p>
-                    <p class="pirkejoPvmKodas"></p>
-                    <p class="pirkejoTelNr"></p>
-                    <p class="pirkejoEmail"></p>
+                    </div>
+                    <div class="pirkejas">
+                        <h3>Pirkėjas</h3>
+                        <p class="pirkejoPavadini"></p>
+                        <p class="pirkejoAdresas"></p>
+                        <p class="pirkejoImonesKodas"></p>
+                        <p class="pirkejoPvmKodas"></p>
+                        <p class="pirkejoTelNr"></p>
+                        <p class="pirkejoEmail"></p>
+                    </div>
                 </div>
             </div>
-        </div>
 
-    </section>
-    <section>
-        <div class="sectionLentele">
-            <table class="lentele">
-                <thead>
-                    <tr>
-                        <th>Prekės pavadinimas</th>
-                        <th>Kiekis</th>
-                        <th>Kaina be nuuolaidos</th>
-                        <th>Nuolaida</th>
-                        <th>Visa kaina su nuolaida</th>
-                    </tr>
-                </thead>
-                <tbody id="prekes">
-                   
-                </tbody>
-            </table>
-            <div class="visoSuma">
-                <p>Transportavimo išlaidos: <span id="transportoIslaidos"></span></p>
-                <p>Tarpinė kaina: <span id="tarpineSuma"></span></p>
-                <p>21% PVM: <span id="pvm"></span></p>
-                <p class="viso">Galutinė kaina su PVM:<span id="galutineSuma"></span></p>
+        </section>
+        <section>
+            <div class="sectionLentele">
+                <table class="lentele">
+                    <thead>
+                        <tr>
+                            <th>Prekės pavadinimas</th>
+                            <th>Kiekis</th>
+                            <th>Kaina be nuolaidos</th>
+                            <th>Nuolaida</th>
+                            <th>Kaina su nuolaida</th>
+                        </tr>
+                    </thead>
+                    <tbody id="prekes">
+
+                    </tbody>
+                </table>
+                <div class="visoSuma">
+                    <p>Transportavimo išlaidos: <span id="transportoIslaidos"></span></p>
+                    <p>Tarpinė kaina: <span id="tarpineSuma"></span></p>
+                    <p>PVM 21%: <span id="pvm"></span></p>
+                    <p class="viso">Galutinė kaina su PVM:<span id="galutineSuma"></span></p>
+                </div>
+                <div class="saskaitaIsrase">
+                    <p> Sąskaitą išrašė: <span> Kristina Kalkienė</span></p>
+                    <p> Sąskaitą priėmė įmonės: <span> Bebras Bebrauskas</span></p>
+                </div>
             </div>
-        </div>
+        </section>
     </section>
-
 </body>
 
 </html>
